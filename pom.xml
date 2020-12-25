@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.skf</groupId>
-	<artifactId>project</artifactId>
+	<artifactId>rail</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>skf-project</name>
+	<name>skf-rail</name>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
