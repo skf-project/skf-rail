@@ -15,37 +15,4 @@
 		</classes>
 	</test> <!-- Test -->
 
-	<test name="Turbine">
-		<classes>
-			<class name="com.skf.testcases.Turbine" />
-			<class name="com.skf.testcases.Notification" />
-		</classes>
-	</test> <!-- Test -->
-
-	<test name="Event">
-		<classes>
-			<class name="com.skf.testcases.EventSection" />
-			<class name="com.skf.testcases.CancelFlow" />
-			<class name="com.skf.testcases.ExistingEvent" />
-			<class name="com.skf.testcases.SaveSubmitEventFlow" />
-		</classes>
-	</test> <!-- Test -->
-	<test name="Report">
-		<classes>
-			<class name="com.skf.testcases.ReportFault" />
-			<class name="com.skf.testcases.ReportFeedback" />
-		</classes>
-	</test>
-		<test name="Event Work Order ">
-		<classes>
-			<class name="com.skf.testcases.EventWorkAndOrder" />
-		</classes>
-	</test>
-	
-		<test name="Supply Chain ">
-		<classes>
-			<class name="com.skf.testcases.SupplyChain" />
-		</classes>
-	</test>
-
 </suite> <!-- Suite -->
