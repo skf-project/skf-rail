@@ -12,9 +12,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
-import com.skf.base.Page;
+import com.skf.base.Pages;
 
-public class CommonUtilities extends Page {
+public class CommonUtilities extends Pages {
 
 	public boolean isElementPresent(WebElement locator) {
 		try {

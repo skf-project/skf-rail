@@ -7,10 +7,10 @@ import java.util.Properties;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import com.skf.base.Page;
+import com.skf.base.Pages;
 import com.skf.pages.LoginPage;
 
-public class Login extends Page {
+public class Login extends Pages {
 
 	String path = System.getProperty("user.dir");
 	public static Properties config = new Properties();
@@ -23,12 +23,13 @@ public class Login extends Page {
 		LoginPage loginPage = new LoginPage();
 		loginPage.loginApp(config.getProperty("validUsername"),
 				config.getProperty("validPassword"));
-
 	}
+
+	
 	
 	@AfterMethod
 	public void tearDown() {
-		Page.driver.close();
+		Pages.driver.close();
 		driver=null;
 		log.debug("Browser closed");
 	}

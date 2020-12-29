@@ -3,9 +3,9 @@ package com.skf.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.skf.base.Page;
+import com.skf.base.Pages;
 
-public class LoginPage extends Page {
+public class LoginPage extends Pages {
 
 	public void loginApp(String username, String password) {
 		driver.findElement(By.xpath(

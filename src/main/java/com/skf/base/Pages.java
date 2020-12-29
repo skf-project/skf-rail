@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeMethod;
 
 
 
-public class Page {
+public class Pages {
 
 	String path = System.getProperty("user.dir");
 	public static WebDriver driver = null;
