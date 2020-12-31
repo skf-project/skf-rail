@@ -11,6 +11,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.skf.base.Pages;
 
@@ -24,9 +26,8 @@ public class CommonUtilities extends Pages {
 			return false;
 		}
 	}
-	
-	public void javaScriptExecutorType(String value) throws AWTException
-	{
+
+	public void javaScriptExecutorType(String value) throws AWTException {
 		String text = value;
 		StringSelection stringSelection = new StringSelection(text);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -38,9 +39,8 @@ public class CommonUtilities extends Pages {
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 	}
-	
-	public void javaScriptClick(WebElement locator)
-	{
+
+	public void javaScriptClick(WebElement locator) {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].click()", locator);
 	}

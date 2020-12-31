@@ -1,5 +1,7 @@
 package com.skf.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -17,6 +19,7 @@ public class LoginPage extends Pages {
 		driver.findElement(By.cssSelector(
 				".background-customizable.modal-content.modal-content-desktop.visible-lg.visible-md form[name='cognitoSignInForm'] > input[name='signInSubmitButton']"))
 				.click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	public WebElement usernameTextBox() {

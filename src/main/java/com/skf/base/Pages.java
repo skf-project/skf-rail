@@ -82,7 +82,6 @@ public class Pages {
 			prefs.put("profile.content_settings.exceptions.automatic_downloads.*.setting", 1 );
 			prefs.put("download.prompt_for_download", "false");
 			String downloadFilesLocation = System.getProperty("user.dir") + config.getProperty("downloadpath");
-			System.out.println("downloadFilesLocation is"+downloadFilesLocation);
 			new File(downloadFilesLocation).mkdirs();
 			prefs.put("download.default_directory",downloadFilesLocation);
 			options.setExperimentalOption("prefs", prefs);
