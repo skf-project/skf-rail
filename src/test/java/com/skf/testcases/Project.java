@@ -23,7 +23,7 @@ public class Project extends Pages {
 	public static Properties config = new Properties();
 	public static FileInputStream fisco;
 
-	@Test(enabled=false)
+	@Test
 	public void projectNavigation() throws IOException, InterruptedException {
 		fisco = new FileInputStream(path + "\\src\\test\\resources\\properties\\Config.properties");
 		config.load(fisco);
@@ -46,7 +46,7 @@ public class Project extends Pages {
 		assertTrue(pp.deleteTableIcon().isDisplayed());	
 	}
 
-	//@Test
+	@Test
 	public void addNewProjectNavigation() throws IOException, InterruptedException {
 		fisco = new FileInputStream(path + "\\src\\test\\resources\\properties\\Config.properties");
 		config.load(fisco);
@@ -67,7 +67,7 @@ public class Project extends Pages {
 		assertTrue(ap.projectCaseNameLable().getText().matches("Project Case Name"));
 	}
 	
-	//@Test
+	@Test
 	public void addNewProjectComponent() throws IOException, InterruptedException {
 		fisco = new FileInputStream(path + "\\src\\test\\resources\\properties\\Config.properties");
 		config.load(fisco);
