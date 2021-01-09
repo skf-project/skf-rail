@@ -35,6 +35,18 @@ public class ProjectPage extends Pages {
 		return driver.findElement(By.cssSelector("tr:nth-of-type(1) > td:nth-of-type(5) > div > svg:nth-of-type(2)"));
 	}
 	
+	public WebElement editTableRecordIcon() {
+		return driver.findElement(By.xpath("//td[contains(text(),\"Albania\")]/../td[contains(text(),\"New Project Description\")]/../td[@class]/div[1]/*[1]"));
+	}
+	
+	public WebElement deleteTableRecordIcon() {
+		return driver.findElement(By.xpath("//td[contains(text(),\"Albania\")]/../td[contains(text(),\"New Project Description\")]/../td[@class]/div[1]/*[2]"));
+	}
+	
+	public WebElement deleteButtonOnPopUp() {
+		return driver.findElement(By.xpath("//button[contains(text(),'Delete')]"));
+	}
+	
 	
 	
 	
