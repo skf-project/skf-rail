@@ -66,10 +66,5 @@ public class SupplyChain extends Pages{
 		assertTrue(supplyChainPage.availabilityStatusButton5().isDisplayed());
 		assertTrue(supplyChainPage.availabilityStatusButton6().isDisplayed());
     }
-	    @AfterMethod
-		public void tearDown() {
-			Pages.driver.close();
-			driver=null;
-			log.debug("Browser closed");
-		}
+	  
 }

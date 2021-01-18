@@ -43,7 +43,7 @@ public class Analytics_Sale extends Pages{
 		Robot robot = new Robot();
 		landingPage.projectDropDown().click();
 		robot.keyPress(KeyEvent.VK_ENTER);
-		//analyticspage.projectTickIcon().isDisplayed();
+		analyticspage.projectTickIcon().isDisplayed();
 		
 		
   }
