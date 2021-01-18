@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import com.skf.base.Pages;
@@ -65,4 +66,10 @@ public class SupplyChain extends Pages{
 		assertTrue(supplyChainPage.availabilityStatusButton5().isDisplayed());
 		assertTrue(supplyChainPage.availabilityStatusButton6().isDisplayed());
     }
+	    @AfterMethod
+		public void tearDown() {
+			Pages.driver.close();
+			driver=null;
+			log.debug("Browser closed");
+		}
 }
