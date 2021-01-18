@@ -88,7 +88,6 @@ public class AnalyticsReimbursement extends Pages{
 		//ar.bearingByStatusGroupValue().click();
 		Actions action=new Actions(driver);
 		action.moveByOffset(240, 350);
-		Thread.sleep(10000);
 		
 				
   }
