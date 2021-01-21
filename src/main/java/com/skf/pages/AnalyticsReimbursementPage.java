@@ -77,6 +77,69 @@ public class AnalyticsReimbursementPage extends Pages{
 		return driver.findElement(By.xpath("//*[@id=\"sandbox-host\"]//span[contains(text(),\"Refurbishment\")]"));
 	}
 	
+	public WebElement DrillDownIcon()
+	{
+		return driver.findElement(By.cssSelector(".drillDownLevelGrouped.glyph-small.glyphicon.pbi-glyph-drilldowndisabled-nocircle"));
+	}
+	
+	public WebElement DrillUpIcon()
+	{
+		return driver.findElement(By.cssSelector(".pbi-glyph-drillup-nocircle"));
+	}
+	
+	public WebElement GoToNextLevelIcon()
+	{
+		return driver.findElement(By.cssSelector(".drillDownLevelGrouped.glyph-small.glyphicon.pbi-glyph-expand-nocircle"));
+	}
+	
+	public WebElement ExpandDownOneAllHierarchyIcon()
+	{
+		return driver.findElement(By.cssSelector(".drillDownLevelGrouped.glyph-small.glyphicon.pbi-glyph-inline-drill-nocircle"));
+	}
+	
+	public WebElement FilterIcon()
+	{
+		return driver.findElement(By.cssSelector(".vcFilterRestatementBtn"));
+	}
+	
+	public WebElement FocusIcon()
+	{
+		return driver.findElement(By.cssSelector("[aria-label='Focus mode']"));
+	}
+	
+	public WebElement MoreOptionIcon()
+	{
+		return driver.findElement(By.cssSelector(".glyph-small.glyphicon.pbi-glyph-more"));
+	}
+	
+	public WebElement detailedBatchLabel()
+	{
+		return driver.findElement(By.cssSelector("div[title='Detailed Batch']  .preTextWithEllipsis"));
+	}
+	
+	public WebElement filterDateMonth()
+	{
+		return driver.findElement(By.cssSelector("li:nth-of-type(1) strong"));
+	}
+	
+	public WebElement filterDateYear()
+	{
+		return driver.findElement(By.cssSelector("li:nth-of-type(2) strong"));
+	}
+	
+	public WebElement filterStatusGroup()
+	{
+		return driver.findElement(By.cssSelector("li:nth-of-type(3) strong"));
+	}
+	
+	public WebElement backToReport()
+	{
+		return driver.findElement(By.cssSelector("[localize='VisualContainer_PopOut_BackToReportButton']"));
+	}
+	
+	
+	
+	
 	
 
 	

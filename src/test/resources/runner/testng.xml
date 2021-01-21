@@ -14,5 +14,16 @@
 			<class name="com.skf.testcases.Login" />
 		</classes>
 	</test> <!-- Test -->
+	<test name="Analytics">
+		<classes>
+			<class name="com.skf.testcases.Analytics_Sale" />
+			<class name="com.skf.testcases.AnalyticsReimbursement" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Project">
+		<classes>
+			<class name="com.skf.testcases.Project" />
+		</classes>
+	</test> <!-- Test -->
 
 </suite> <!-- Suite -->
