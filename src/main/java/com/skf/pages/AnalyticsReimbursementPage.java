@@ -137,6 +137,56 @@ public class AnalyticsReimbursementPage extends Pages{
 		return driver.findElement(By.cssSelector("[localize='VisualContainer_PopOut_BackToReportButton']"));
 	}
 	
+	public WebElement exportData()
+	{
+		return driver.findElement(By.cssSelector("ng-repeat:nth-of-type(1) > drop-down-list-item  ng-switch > div[role='menuitem']"));
+	}
+	
+	public WebElement underlyingData()
+	{
+		return driver.findElement(By.cssSelector("div:nth-of-type(2) > input[role='radio']"));
+	}
+	
+	public WebElement fileFormatDropdown()
+	{
+		return driver.findElement(By.cssSelector("select#formatSelect"));
+	}
+	
+	public WebElement fileFormatXLSX()
+	{
+		return driver.findElement(By.cssSelector("select#formatSelect > option[value='0']"));
+	}
+	
+	public WebElement fileFormatCSV()
+	{
+		return driver.findElement(By.cssSelector("select#formatSelect > option[value='1']"));
+	}
+	
+	public WebElement exportButton()
+	{
+		return driver.findElement(By.cssSelector("dialog-footer > .primary"));
+	}
+	
+	public WebElement exportingDataMessage()
+	{
+		return driver.findElement(By.cssSelector(".ng-star-inserted.toastTitle"));
+	}
+	
+	public WebElement exportingDataCancelButton()
+	{
+		return driver.findElement(By.cssSelector("dialog-footer > button:nth-of-type(2)"));
+	}
+	
+	public WebElement showAsTableIcon()
+	{
+		return driver.findElement(By.cssSelector("ng-repeat:nth-of-type(2) > drop-down-list-item div[role='menuitem'] > .itemLabel.trimmedTextWithEllipsis"));
+	}
+	
+	public WebElement switchToVerticalLayoutIcon()
+	{
+		return driver.findElement(By.cssSelector(".glyph-small.glyphicon.pbi-glyph-rotatevertical"));
+	}
+	
 	
 	
 	

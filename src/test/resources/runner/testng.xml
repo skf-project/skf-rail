@@ -9,9 +9,14 @@
 			class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 
-	<test name="Login">
+	<test name="SupplyChain">
 		<classes>
-			<class name="com.skf.testcases.Login" />
+			<class name="com.skf.testcases.SupplyChain" />
+		</classes>
+	</test> <!-- Test -->
+		<test name="HomePage">
+		<classes>
+			<class name="com.skf.testcases.HomePage" />
 		</classes>
 	</test> <!-- Test -->
 	<test name="Analytics">
