@@ -187,10 +187,98 @@ public class AnalyticsReimbursementPage extends Pages{
 		return driver.findElement(By.cssSelector(".glyph-small.glyphicon.pbi-glyph-rotatevertical"));
 	}
 	
+	public WebElement DetailedBatchDateHeader()
+	{
+		return driver.findElement(By.cssSelector("div[title='Date']"));
+	}
 	
+	public WebElement DetailedBatchBatchHeader()
+	{
+		return driver.findElement(By.cssSelector("div[title='Batch']"));
+	}
 	
-	
-	
+	public WebElement DetailedBatchDesignationHeader()
+	{
+		return driver.findElement(By.cssSelector("div[title='Designation']"));
+	}
 
+	public WebElement DetailedBatchTBUHeader()
+	{
+		return driver.findElement(By.cssSelector("div[title='TBU']"));
+	}
 	
+	public WebElement DetailedBatchScrappedHeader()
+	{
+		return driver.findElement(By.cssSelector("div[title='Scrapped']"));
+	}
+
+	public WebElement DetailedBatchBatchStatusHeader()
+	{
+		return driver.findElement(By.cssSelector("div[title='Batch Status']"));
+	}
+	
+	public WebElement rightDateSlider()
+	{
+		return driver.findElement(By.cssSelector("[data-handle='1'] .noUi-touch-area"));
+	}
+	
+	public WebElement leftDateSlider()
+	{
+		return driver.findElement(By.cssSelector("[data-handle='0'] .noUi-touch-area"));
+	}
+	
+	public WebElement dateText()
+	{
+		return driver.findElement(By.cssSelector("div:nth-of-type(1) > .date-slicer-input.hasDatepicker"));
+	}
+	
+	public WebElement scrappageBearingStatus()
+	{
+		return driver.findElement(By.cssSelector("div[title='Bearing Status']"));
+	}
+	
+	public WebElement scrappageCAGE()
+	{
+		return driver.findElement(By.cssSelector("div[title='CAGE']"));
+	}
+	
+	public WebElement scrappageINNER()
+	{
+		return driver.findElement(By.cssSelector("div[title='INNER']"));
+	}
+	
+	public WebElement scrappageOUTER()
+	{
+		return driver.findElement(By.cssSelector("div[title='CAGE']"));
+	}
+	
+	public WebElement scrappageROLLERS()
+	{
+		return driver.findElement(By.cssSelector("div[title='ROLLERS']"));
+	}
+	
+	public WebElement scrappageTotal()
+	{
+		return driver.findElement(By.cssSelector("div[title='Total']"));
+	}
+	
+	public WebElement spotlight()
+	{
+		return driver.findElement(By.cssSelector("ng-repeat:nth-of-type(3) > drop-down-list-item div[role='menuitem'] > .itemLabel.trimmedTextWithEllipsis"));
+	}
+	
+	public WebElement sortDescending()
+	{
+		return driver.findElement(By.cssSelector("ng-repeat:nth-of-type(4) > drop-down-list-item div[role='menuitem'] > .itemLabel.trimmedTextWithEllipsis"));
+	}
+	
+	public WebElement sortAscending()
+	{
+		return driver.findElement(By.cssSelector("ng-repeat:nth-of-type(5) > drop-down-list-item div[role='menuitem'] > .itemLabel.trimmedTextWithEllipsis"));
+	}
+	
+	public WebElement sortBy()
+	{
+		return driver.findElement(By.cssSelector("ng-repeat:nth-of-type(6) > drop-down-list-item div[role='menuitem'] > .itemLabel.trimmedTextWithEllipsis"));
+	}
 }
