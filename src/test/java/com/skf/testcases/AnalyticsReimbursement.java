@@ -9,7 +9,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
