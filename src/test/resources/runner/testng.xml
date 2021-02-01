@@ -28,6 +28,7 @@
 	<test name="Project">
 		<classes>
 			<class name="com.skf.testcases.Project" />
+			<class name="com.skf.testcases.ProjectCreationScenario"></class>
 		</classes>
 	</test> <!-- Test -->
 
