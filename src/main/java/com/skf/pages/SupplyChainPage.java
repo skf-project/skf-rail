@@ -77,7 +77,7 @@ public class SupplyChainPage extends Pages{
     	return driver.findElement(By.cssSelector(".row .cell:nth-of-type(6) .slicerItemContainer"));
     }
     public WebElement availabilityStatuiFrame() {
-    	return driver.findElement(By.cssSelector("[src='https\\:\\/\\/app\\.powerbi\\.com\\/13\\.0\\.15101\\.44\\/visualSandboxMinimal\\.html\\?\\=\\&plugin\\=ChicletSlicer1448559807354\\&locale\\=en-US']"));
+    	return driver.findElement(By.cssSelector("[src='https\\:\\/\\/app\\.powerbi\\.com\\/13\\.0\\.15694\\.56\\/visualSandboxMinimal\\.html\\?\\=\\&plugin\\=ChicletSlicer1448559807354\\&locale\\=en-US']"));
     }
     
     public WebElement warehouseAvailabilitybyBearingDesignation() {

@@ -9,7 +9,7 @@ public class AnalyticsPage extends Pages{
 	
 	public WebElement analyticsSalesLabel()
 	{
-		return driver.findElement(By.cssSelector(".SubHeader-module_subHeader__2sKDZ.undefined > .Common-module_container__CqzXF > ul > li:nth-of-type(1) > a"));
+		return driver.findElement(By.cssSelector(".SubHeader-module_subHeader__2sKDZ > .Common-module_container__CqzXF > ul > li:nth-of-type(1)"));
 	}
 
 	public WebElement analyticsRefurbishmentLabel()
