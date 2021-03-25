@@ -124,12 +124,12 @@ public class LandingPage extends Pages {
 	
 	public WebElement userRoleLabel()
 	{
-		return driver.findElement(By.xpath("//p[@class='UserPopOver-module_userName__30m51']"));
+		return driver.findElement(By.xpath("//div[@class='UserPopOver-module_userName__30m51']"));
 	}
 	
 	public WebElement userRoleEmailId()
 	{
-		return driver.findElement(By.cssSelector(".UserPopOver-module_content__3nbR7 > p:nth-of-type(2)"));
+		return driver.findElement(By.cssSelector(".UserPopOver-module_email__2l2q6"));
 	}
 	public WebElement dashboardTilesImage()
 	{
